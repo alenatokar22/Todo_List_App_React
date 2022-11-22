@@ -2,13 +2,9 @@ import React, { useEffect } from "react";
 
 const Form = ({ input, setInput, toDo, setTodo, editTodo, setEditTodo }) => {
   const updateTodo = (title, id, completed) => {
-    // console.log(`title=${title} id=${id} Compledet=${completed}`);
-
     const newtodo = toDo.map((item) =>
       item.id === id ? { title, id, completed } : item
     );
-
-    // console.log(newtodo);
 
     setTodo(newtodo);
     setEditTodo("");
