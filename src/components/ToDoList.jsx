@@ -34,25 +34,19 @@ const ToDoList = ({ toDo, setTodo, setEditTodo }) => {
               className="button-complete task-button"
               onClick={() => handleComplete(item)}
             >
-              <i className="fa fa-check-circle">
-                <img src="src/assets/completed.svg" alt="completed" />
-              </i>
+              <img src="src/assets/completed.svg" alt="completed" />
             </button>
             <button
               className="button-edit task-button"
               onClick={() => handleEdit(item)}
             >
-              <i className="fa fa-edit">
-                <img src="src/assets/edit.svg" alt="edit" />
-              </i>
+              <img src="src/assets/edit.svg" alt="edit" />
             </button>
             <button
               className="button-delete task-button"
               onClick={() => handleDelete(item)}
             >
-              <i className="fa fa-trash">
-                <img src="src/assets/trash.svg" alt="delete" />
-              </i>
+              <img src="src/assets/trash.svg" alt="delete" />
             </button>
           </div>
         </li>
