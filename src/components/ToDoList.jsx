@@ -1,3 +1,5 @@
+import Edit from "../assets/edit.svg";
+
 const ToDoList = ({ toDo, setTodo, setEditTodo }) => {
   const handleComplete = ({ id }) => {
     setTodo(
@@ -40,7 +42,7 @@ const ToDoList = ({ toDo, setTodo, setEditTodo }) => {
               className="button-edit task-button"
               onClick={() => handleEdit(item)}
             >
-              <img src="src/assets/edit.svg" alt="edit" />
+              <img src={Edit} alt="edit" />
             </button>
             <button
               className="button-delete task-button"

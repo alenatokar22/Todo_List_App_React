@@ -5,10 +5,7 @@ import ToDoList from "./components/ToDoList";
 import "./App.css";
 
 const App = () => {
-  // const initialState = JSON.parse(localStorage.getItem("toDo")) || [];
   const initialState = [];
-  //
-  //
   const [input, setInput] = useState("");
   const [toDo, setTodo] = useState(initialState);
   const [editTodo, setEditTodo] = useState(null);
