@@ -1,4 +1,6 @@
+import Completed from "../assets/completed.svg";
 import Edit from "../assets/edit.svg";
+import Trash from "../assets/trash.svg";
 
 const ToDoList = ({ toDo, setTodo, setEditTodo }) => {
   const handleComplete = ({ id }) => {
@@ -36,7 +38,7 @@ const ToDoList = ({ toDo, setTodo, setEditTodo }) => {
               className="button-complete task-button"
               onClick={() => handleComplete(item)}
             >
-              <img src="src/assets/completed.svg" alt="completed" />
+              <img src={Completed} alt="completed" />
             </button>
             <button
               className="button-edit task-button"
@@ -48,7 +50,7 @@ const ToDoList = ({ toDo, setTodo, setEditTodo }) => {
               className="button-delete task-button"
               onClick={() => handleDelete(item)}
             >
-              <img src="src/assets/trash.svg" alt="delete" />
+              <img src={Trash} alt="delete" />
             </button>
           </div>
         </li>
